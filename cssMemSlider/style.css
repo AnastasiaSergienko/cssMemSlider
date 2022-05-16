@@ -35,12 +35,12 @@
   width: 3em;
   height: 3em;
  border-radius: 100%;
- border: 5px solid rgb(155, 255, 247);
+ border: 5px solid rgb(184, 245, 240);
 
 }
 .slider-nav-circle:hover {
  border: 3px solid rgb(174, 203, 204);
- background-color: rgb(174, 203, 204);
+ background-color: rgb(184, 245, 240);
 }
 .slider-nav-circle:checked {
   border: 3px solid white;
