@@ -2,6 +2,15 @@
   margin: 0;
   padding: 0; 
 }
+html, body {
+  height: 100%;
+}
+.wrapper {
+  min-height: 100%;
+  background-color: #A9C9FF;
+  background-image: linear-gradient(228deg, #A9C9FF 0%, #FFBBEC 50%, #ffffff 100%);
+
+}
 .slider {
   margin-left: auto;
   margin-right: auto;
@@ -39,8 +48,8 @@
 
 }
 .slider-nav-circle:hover {
- border: 3px solid rgb(174, 203, 204);
- background-color: rgb(184, 245, 240);
+ border: 3px solid rgb(78, 95, 95);
+ background-color: rgb(193, 255, 250);
 }
 .slider-nav-circle:checked {
   border: 3px solid white;
@@ -50,6 +59,7 @@ img {
   max-width: 1000px;
   height: auto;
   width: 1000px;
+  border-radius: 2%;
 }
 .item {
   display: grid;
