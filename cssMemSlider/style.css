@@ -1,0 +1,145 @@
+*{
+  margin: 0;
+  padding: 0; 
+}
+html, body {
+  height: 100%;
+}
+.wrapper {
+  min-height: 100%;
+  background-color: #A9C9FF;
+  background-image: linear-gradient(228deg, #A9C9FF 0%, #FFBBEC 50%, #ffffff 100%);
+
+}
+.slider {
+  margin-left: auto;
+  margin-right: auto;
+}
+.slider-items {
+ display: block;
+ overflow: hidden;
+ max-width: 1000px;
+ margin-left: auto;
+ margin-right: auto;
+}
+.slider-items input{
+  position: absolute;
+  visibility: hidden;
+}
+ .slider-block {
+  display: flex;
+  position: relative;
+}
+.slider-nav {
+  position: absolute;
+  top: 770px;
+  width: 1000px;
+  display: flex;
+  justify-content: end;
+}
+.slider-nav-item {
+  padding: 1%;
+}
+.slider-nav-circle {
+  width: 3em;
+  height: 3em;
+ border-radius: 100%;
+ border: 5px solid rgb(184, 245, 240);
+
+}
+.slider-nav-circle:hover {
+ border: 3px solid rgb(78, 95, 95);
+ background-color: rgb(193, 255, 250);
+}
+.slider-nav-circle:checked {
+  border: 3px solid white;
+  background-color: white;
+ }
+img {
+  max-width: 1000px;
+  height: auto;
+  width: 1000px;
+  border-radius: 2%;
+}
+.item {
+  display: grid;
+  row-gap: 40px;
+}
+h1 {
+  font-family: 'Georgia';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 3em;
+  line-height: 115%;
+  letter-spacing: 0.06em;
+  color: black;
+
+}
+
+@media screen and (max-width: 1100px) {
+  .slider-items {
+    max-width: 500px;
+   }
+   .slider-nav {
+    top: 400px;
+    bottom: unset;
+    width: 500px;
+    justify-content: center;
+  }
+  img {
+    max-width: 500px;
+  }
+  .item {
+    row-gap: 100px;
+  }
+  .slider-nav-circle {
+    width: 2em;
+    height: 2em;
+  }
+  h1 {
+   font-size: 2em;
+  }
+}
+@media screen and (max-width: 600px) {
+  .slider-items {
+    max-width: 300px;
+   }
+   .slider-nav {
+    top: 250px;
+    bottom: unset;
+    width: 300px;
+    justify-content: center;
+  }
+  img {
+    max-width: 300px;
+  }
+  .item {
+    row-gap: 80px;
+  }
+  .slider-nav-circle {
+    width: 1.5em;
+    height: 1.5em;
+   }
+   h1 {
+    font-size: 1.5em;
+   }
+}
+
+
+ #s1:checked ~ .slider-block {
+   margin-left: 0;
+   transition: .5s;
+ }
+ #s2:checked ~ .slider-block {
+   margin-left: -100%;
+   transition: .5s;
+ }
+ #s3:checked ~ .slider-block {
+   margin-left: -200%;
+   transition: .5s;
+ }
+ #s4:checked ~ .slider-block {
+   margin-left: -300%;
+   transition: .5s;
+ }
+ 
