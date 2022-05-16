@@ -32,7 +32,7 @@ html, body {
 }
 .slider-nav {
   position: absolute;
-  bottom: 35%;
+  top: 770px;
   width: 1000px;
   display: flex;
   justify-content: end;
